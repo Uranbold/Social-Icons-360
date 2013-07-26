@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'tw social';
+  src: url('font/tw-social-icons.eot?61147588');
+  src: url('font/tw-social-icons.eot?61147588#iefix') format('embedded-opentype'),
+       url('font/tw-social-icons.woff?61147588') format('woff'),
+       url('font/tw-social-icons.ttf?61147588') format('truetype'),
+       url('font/tw-social-icons.svg?61147588#tw-social') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'tw-social';
+    src: url('../font/tw-social.svg?61147588#tw-social') format('svg');
+  }
+}
+*/
+ 
+ [class^="tw-icon-"]:before, [class*=" tw-icon-"]:before {
+  font-family: "tw social";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* Animation center compensation - magrins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.tw-icon-youtube:before { content: '\e817'; } /* 'î —' */
+.tw-icon-reddit:before { content: '\e818'; } /* 'î ˜' */
+.tw-icon-digg:before { content: '\e81a'; } /* 'î š' */
+.tw-icon-deviantart:before { content: '\e819'; } /* 'î ™' */
+.tw-icon-left-open:before { content: '\e75d'; } /* 'î��' */
+.tw-icon-rss:before { content: '\e81b'; } /* 'î ›' */
+.tw-icon-github:before { content: '\e800'; } /* 'î €' */
+.tw-icon-flickr:before { content: '\e801'; } /* 'î �' */
+.tw-icon-vimeo:before { content: '\e802'; } /* 'î ‚' */
+.tw-icon-twitter:before { content: '\e803'; } /* 'î ƒ' */
+.tw-icon-facebook:before { content: '\e804'; } /* 'î „' */
+.tw-icon-gplus:before { content: '\e805'; } /* 'î …' */
+.tw-icon-pinterest:before { content: '\e806'; } /* 'î †' */
+.tw-icon-tumblr:before { content: '\e807'; } /* 'î ‡' */
+.tw-icon-linkedin:before { content: '\e808'; } /* 'î ˆ' */
+.tw-icon-dribbble:before { content: '\e809'; } /* 'î ‰' */
+.tw-icon-stumbleupon:before { content: '\e80a'; } /* 'î Š' */
+.tw-icon-lastfm:before { content: '\e80b'; } /* 'î ‹' */
+.tw-icon-instagram:before { content: '\e80c'; } /* 'î Œ' */
+.tw-icon-dropbox:before { content: '\e815'; } /* 'î •' */
+.tw-icon-evernote:before { content: '\e814'; } /* 'î �?' */
+.tw-icon-skype:before { content: '\e80d'; } /* 'î �' */
+.tw-icon-renren:before { content: '\e80e'; } /* 'î Ž' */
+.tw-icon-paypal:before { content: '\e80f'; } /* 'î �' */
+.tw-icon-picasa:before { content: '\e810'; } /* 'î �' */
+.tw-icon-soundcloud:before { content: '\e811'; } /* 'î ‘' */
+.tw-icon-behance:before { content: '\e812'; } /* 'î ’' */
+.tw-icon-google-circles:before { content: '\e813'; } /* 'î “' */
+.tw-icon-smashing:before { content: '\e816'; } /* 'î –' */

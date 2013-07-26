@@ -1,0 +1,93 @@
+/* 05. Social Icons */
+
+
+.tw-social-icon{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    margin-bottom: -1px;
+    list-style: none;
+}
+.loop-image .tw-social-icon a{
+    display: inline-block;
+    width: 42px;
+    background: #fff;
+}
+.tw-social-icon a,#bottom .tw-social-icon a{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 42px;
+    height: 42px;
+    color: #aaa;
+    text-align: center;
+    font-size: 16px;
+    line-height: 41px;
+}
+.tw-social-icon a span,#bottom .tw-social-icon a span{
+    display: block;
+    line-height: 42px;
+
+    -webkit-transition: all 400ms ease-out 0s;	
+    -moz-transition: all 400ms ease-out 0s;
+    -o-transition: all 400ms ease-out 0s;
+    transition: all 400ms ease-out 0s;
+
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+
+    -webkit-perspective: 1000px; 
+    -moz-perspective: 1000px;  
+    -ms-perspective: 1000px;  
+    perspective: 1000px;
+}
+.tw-social-icon a:hover {
+    color: #fff;
+}
+.tw-social-icon a:hover span,#bottom .tw-social-icon a:hover span{
+    color: #FFFFFF;
+    background-color: #2dcb73;
+
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+.tw-social-icon a.facebook:hover span{
+    background-color: #305fb3;
+}
+.tw-social-icon a.flickr:hover span{
+    background-color: #ff0084;
+}
+.tw-social-icon a.gplus:hover span{
+    background-color: #d7482a;
+}
+.tw-social-icon a.twitter:hover span{
+    background-color: #00d7d5;
+}
+.tw-social-icon a.pinterest:hover span{
+    background-color: #e1003a;
+}
+.tw-social-icon a.skype:hover span{
+    background-color: #12c7ef;
+}
+.tw-social-icon a.vimeo:hover span{
+    background-color: #3f90bf;
+}
+.tw-social-icon a.youtube:hover span{
+    background-color: #ff3333;
+}
+.tw-social-icon a.dribbble:hover span{
+    background-color: #f06eaa;
+}
+.tw-social-icon a.linkedin:hover span{
+    background-color: #3399cc;
+}
+.tw-social-icon a.instagram:hover span{
+    background-color: #9f6f59;
+}
+.tw-social-icon a.rss:hover span{
+    background-color: #fca600;
+}
