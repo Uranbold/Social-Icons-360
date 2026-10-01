@@ -1,6 +1,6 @@
 ---
 name: naverpay-squad
-description: Orchestrate the Naver Pay multi-agent team (po, sa, back, front, mobile, ui, ux). Use when a Naver Pay task spans more than one role, when the user says "squad", "team", or "all roles", or when it is unclear which agent should own a Naver Pay request.
+description: Orchestrate the Naver Pay multi-agent team (po, sa, back, front, mobile, ui, ux, ix). Use when a Naver Pay task spans more than one role, when the user says "squad", "team", or "all roles", or when it is unclear which agent should own a Naver Pay request.
 ---
 
 # Naver Pay squad orchestration
