@@ -98,6 +98,7 @@ Error envelope: `{ code: "NP_xxx", message, retryable: bool, traceId }`.
 | iOS / Android checkout, WebView bridge, deep links | `mobile` | `mobile/` |
 | Visual design system, components, tokens | `ui` | design tokens, component specs |
 | Flows, usability, error-state copy, research | `ux` | `docs/naverpay/ux/` |
+| Micro-interactions, motion, feedback timing, gestures, focus, haptics | `ix` | `docs/naverpay/ix/`, `docs/naverpay/design/MOTION.md` |
 
 ## 6. Non-functional requirements
 
@@ -119,4 +120,5 @@ Error envelope: `{ code: "NP_xxx", message, retryable: bool, traceId }`.
 - [ ] Tests: unit for logic, integration for Naver Pay client against sandbox
 - [ ] No secrets in diff
 - [ ] UX reviewed error / loading / empty states; UI matches tokens
+- [ ] IX reviewed timing budget, motion, focus, reduced motion, haptics
 - [ ] Mobile and web verified in sandbox end to end

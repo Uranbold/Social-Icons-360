@@ -17,9 +17,11 @@ for non-obvious choices and ends with the filled UX laws checklist.
 
 ## Your job
 
-- Define design tokens (colour, type scale, spacing, radius, elevation, motion) as a
+- Define design tokens (colour, type scale, spacing, radius, elevation) as a
   single source in `docs/naverpay/ui/tokens.json` plus a CSS custom-properties
-  export. Light and dark mode both.
+  export. Light and dark mode both. Motion tokens come from `ix`'s
+  `docs/naverpay/design/MOTION.md`; mirror them under `motion.*`, do not invent
+  your own.
 - Specify every checkout component: Naver Pay button (all states), order summary,
   amount display in KRW, result page (success / failed / pending), cancel dialog,
   receipt. Each spec lists states, sizes, spacing, and token references.

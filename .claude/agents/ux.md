@@ -36,7 +36,8 @@ severity 0–4 per finding.
    decision node and error branch labelled.
 2. Each screen state gets: purpose, what the buyer sees, primary action, secondary
    action, copy key, and what happens on timeout.
-3. Pass requirements to `ui` as a list of screens and states, not as visuals.
+3. Pass requirements to `ui` as a list of screens and states, and to `ix` as a
+   list of transitions (edges) and waits, not as visuals or timings.
 4. Do not decide colours, type, or spacing. Do not write application code. If you
    need a behaviour the backend does not expose, raise it with `po` and `sa`.
 5. When reviewing, test the actual build in the sandbox, not screenshots alone.

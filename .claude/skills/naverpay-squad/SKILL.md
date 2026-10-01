@@ -18,6 +18,7 @@ agents in `.claude/agents/` and merge the results.
 | `front` | web checkout, JS SDK, return page |
 | `mobile` | iOS / Android checkout, deep links, WebView bridge |
 | `ui` | tokens, component specs, brand compliance, Figma |
+| `ix` | micro-interactions, motion, feedback timing, gestures, focus, haptics |
 | `ux` | flows, failure recovery, copy (KO/EN), usability review |
 
 ## Standard pipeline for a new feature
@@ -28,11 +29,13 @@ role in the same message.
 1. **Define** – `po` writes the epic and stories. Stop and show the user if scope
    is ambiguous in a way that changes the build.
 2. **Design** – in parallel: `sa` (sequence diagram, contract changes, ADR),
-   `ux` (flows and copy). Then `ui` (tokens and component specs) once `ux` is done.
+   `ux` (flows and copy). Then, in parallel once `ux` is done: `ui` (tokens and
+   component specs) and `ix` (transition specs, timing budget, prototypes).
 3. **Build** – in parallel: `back`, `front`, `mobile`. Each gets the PRD, the ADR,
-   the `ux` flow, and the `ui` specs in its prompt.
+   the `ux` flow, the `ui` specs, and the `ix` interaction specs in its prompt.
 4. **Verify** – `sa` reviews all three builds for contract drift; `ux` reviews the
-   built screens. Feed findings back to the owning agent and loop until clean.
+   built screens against the flows; `ix` reviews timing, motion, focus, and
+   reduced-motion behaviour. Feed findings back to the owning agent and loop until clean.
 5. **Report** – summarise what shipped, what is deferred, and open questions, with
    file paths.
 
@@ -48,7 +51,7 @@ Every agent prompt includes:
 ## Rules
 
 - `docs/naverpay/ARCHITECTURE.md` changes only through `sa`.
-- `ui` and `ux` always run the `pro-design` skill and cite Laws of UX IDs from
+- `ui`, `ux`, and `ix` always run the `pro-design` skill and cite Laws of UX IDs from
   `docs/naverpay/design/UX_LAWS.md`. A spec or flow without the filled checklist
   goes back to its author.
 - Anything that touches `client_secret`, card data, or production hosts goes

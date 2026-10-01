@@ -1,6 +1,6 @@
 ---
 name: pro-design
-description: Professional design process for the Naver Pay checkout. Use for any UI or UX work - screens, components, tokens, flows, copy, design review. Chains the artifact-design fundamentals, the Figma design skills, and the Laws of UX checklist in docs/naverpay/design/UX_LAWS.md.
+description: Professional design process for the Naver Pay checkout. Use for any UI, UX, or interaction design work - screens, components, tokens, flows, copy, motion, feedback timing, design review. Chains the artifact-design fundamentals, the Figma design skills, and the Laws of UX checklist in docs/naverpay/design/UX_LAWS.md.
 ---
 
 # Pro design process
@@ -21,6 +21,8 @@ Run these steps in order. Skipping a step is a defect in the deliverable.
   - `figma-generate-library` to build the token and component library
   - `figma-code-connect` to map Figma components to code for `front` and `mobile`
 - Read `docs/naverpay/design/UX_LAWS.md`. Every recommendation cites a law ID.
+- For motion, timing, gestures, or focus behaviour, read
+  `docs/naverpay/design/MOTION.md` and use its tokens; `ix` owns that file.
 
 ## 2. Understand before drawing
 
@@ -38,7 +40,9 @@ Run these steps in order. Skipping a step is a defect in the deliverable.
   proximity and common region (L14, L15).
 - Korean-first typography: Hangul-capable stack, line-height tuned for mixed Hangul,
   Latin, and numerals; KRW with thousands separators, no decimals.
-- Motion: feedback under 400 ms (L05), reduced-motion variant for every animation.
+- Motion: durations and easings only from `MOTION.md`; feedback under 400 ms
+  (L05); reduced-motion variant for every animation; one loading indicator at a
+  time. Interaction specs follow the template in `.claude/agents/ix.md`.
 
 ## 4. Verify
 
@@ -52,6 +56,7 @@ Run these steps in order. Skipping a step is a defect in the deliverable.
 ## 5. Hand off
 
 - Specs in `docs/naverpay/ui/components/<name>.md`, flows in
-  `docs/naverpay/ux/flows/<name>.md`, copy in `docs/naverpay/ux/copy.md`.
+  `docs/naverpay/ux/flows/<name>.md`, copy in `docs/naverpay/ux/copy.md`,
+  interaction specs in `docs/naverpay/ix/<name>.md`.
 - Each file ends with the filled UX laws checklist and the contrast table.
 - Tell `front` and `mobile` which files changed and which tokens were added.

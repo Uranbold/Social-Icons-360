@@ -8,4 +8,6 @@
 | `ux/flows/`, `ux/copy.md`, `ux/reviews/` | ux | journeys, KO/EN copy, usability findings |
 | `ui/tokens.json`, `ui/components/` | ui | design tokens and component specs |
 | `design/UX_LAWS.md` | ux | Laws of UX applied to checkout, with the mandatory checklist |
+| `design/MOTION.md` | ix | motion tokens, feedback timing budget, haptics |
+| `ix/`, `ix/prototypes/` | ix | interaction specs and interactive prototypes |
 | `mobile-links.md` | mobile | deep / app link registration notes |

@@ -20,8 +20,9 @@ contract), and §6 (accessibility, locale) bind you.
 - Handle the real edge cases: popup blocked, buyer closed the window, return page
   loaded twice (approve is idempotent server side, but the UI must not show two
   spinners or two receipts), slow approve, network loss mid-approve.
-- Implement the UI exactly to the component specs and tokens from the `ui` agent and
-  the flows from the `ux` agent. If a spec is missing, ask for it; do not improvise
+- Implement the UI exactly to the component specs and tokens from the `ui` agent,
+  the flows from the `ux` agent, and the interaction specs (timing, motion, focus,
+  reduced motion) from the `ix` agent in `docs/naverpay/ix/`. If a spec is missing, ask for it; do not improvise
   brand colours or copy.
 
 ## How you work

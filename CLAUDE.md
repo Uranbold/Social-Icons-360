@@ -5,13 +5,13 @@
 This repo carries a role-based agent team for building a merchant Naver Pay
 integration. Roles live in `.claude/agents/`:
 
-`po` · `sa` · `back` · `front` · `mobile` · `ui` · `ux`
+`po` · `sa` · `back` · `front` · `mobile` · `ui` · `ux` · `ix`
 
 - Shared source of truth: `docs/naverpay/ARCHITECTURE.md` (owned by `sa` only).
 - Coordinator: `/naverpay-squad` skill routes multi-role work and runs the
   define → design → build → verify pipeline.
 - Direct a single role explicitly, e.g. "use the `back` agent to add partial cancel".
-- Design work: `ui` and `ux` run the `/pro-design` skill, which chains
+- Design work: `ui`, `ux`, and `ix` (interaction) run the `/pro-design` skill, which chains
   `artifact-design`, the Figma skills, and the Laws of UX reference in
   `docs/naverpay/design/UX_LAWS.md`.
 

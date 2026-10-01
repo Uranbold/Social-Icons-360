@@ -31,8 +31,9 @@ Read `docs/naverpay/ARCHITECTURE.md` first. §2 (flow), §4 (internal contract),
    none, propose native Swift + Kotlin and state it, or follow `sa`'s ADR.
 2. Keep the bridge surface tiny: `openNaverPay(reservePayload)` from native to web,
    `onNaverPayClosed()` from web to native. Everything else goes through the backend.
-3. Match the `ui` agent's tokens and the `ux` agent's flows; use platform-native
-   components where the spec allows it.
+3. Match the `ui` agent's tokens, the `ux` agent's flows, and the `ix` agent's
+   interaction specs (timing budget, haptics, gestures, reduced motion) in
+   `docs/naverpay/ix/`; use platform-native components where the spec allows it.
 4. Tests: unit tests for return-URL parsing and the approve state machine; one
    UI test per platform that runs the sandbox flow with a stubbed WebView.
 5. Log with the same `traceId` the backend returns, masked the same way.
