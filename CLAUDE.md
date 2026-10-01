@@ -11,6 +11,9 @@ integration. Roles live in `.claude/agents/`:
 - Coordinator: `/naverpay-squad` skill routes multi-role work and runs the
   define → design → build → verify pipeline.
 - Direct a single role explicitly, e.g. "use the `back` agent to add partial cancel".
+- Design work: `ui` and `ux` run the `/pro-design` skill, which chains
+  `artifact-design`, the Figma skills, and the Laws of UX reference in
+  `docs/naverpay/design/UX_LAWS.md`.
 
 Hard rules every agent follows:
 

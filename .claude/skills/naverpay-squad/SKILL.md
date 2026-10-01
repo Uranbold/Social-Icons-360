@@ -48,6 +48,9 @@ Every agent prompt includes:
 ## Rules
 
 - `docs/naverpay/ARCHITECTURE.md` changes only through `sa`.
+- `ui` and `ux` always run the `pro-design` skill and cite Laws of UX IDs from
+  `docs/naverpay/design/UX_LAWS.md`. A spec or flow without the filled checklist
+  goes back to its author.
 - Anything that touches `client_secret`, card data, or production hosts goes
   through `sa` before any build agent acts.
 - Do not let `front` or `mobile` call Naver Pay server APIs directly. If a build
